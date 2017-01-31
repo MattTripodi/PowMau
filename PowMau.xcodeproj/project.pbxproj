@@ -14,6 +14,7 @@
 		EE353E8F1E403D5B0007D842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE353E8D1E403D5B0007D842 /* LaunchScreen.storyboard */; };
 		EE353E9D1E404FD00007D842 /* POWMAU_Logo 1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE353E9C1E404FD00007D842 /* POWMAU_Logo 1.png */; };
 		EE353E9F1E405B300007D842 /* ICON in Resources */ = {isa = PBXBuildFile; fileRef = EE353E9E1E405B300007D842 /* ICON */; };
+		EE353EA11E40D8B50007D842 /* PowMau-ICON-White in Resources */ = {isa = PBXBuildFile; fileRef = EE353EA01E40D8B50007D842 /* PowMau-ICON-White */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		EE353E901E403D5B0007D842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE353E9C1E404FD00007D842 /* POWMAU_Logo 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "POWMAU_Logo 1.png"; sourceTree = "<group>"; };
 		EE353E9E1E405B300007D842 /* ICON */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ICON; sourceTree = "<group>"; };
+		EE353EA01E40D8B50007D842 /* PowMau-ICON-White */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "PowMau-ICON-White"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				EE353E9C1E404FD00007D842 /* POWMAU_Logo 1.png */,
+				EE353EA01E40D8B50007D842 /* PowMau-ICON-White */,
 				EE353E9E1E405B300007D842 /* ICON */,
 			);
 			name = Images;
@@ -162,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE353EA11E40D8B50007D842 /* PowMau-ICON-White in Resources */,
 				EE353E8F1E403D5B0007D842 /* LaunchScreen.storyboard in Resources */,
 				EE353E9F1E405B300007D842 /* ICON in Resources */,
 				EE353E8C1E403D5B0007D842 /* Assets.xcassets in Resources */,
