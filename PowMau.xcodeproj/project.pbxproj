@@ -16,6 +16,7 @@
 		EE353E9F1E405B300007D842 /* ICON in Resources */ = {isa = PBXBuildFile; fileRef = EE353E9E1E405B300007D842 /* ICON */; };
 		EE353EA11E40D8B50007D842 /* PowMau-ICON-White in Resources */ = {isa = PBXBuildFile; fileRef = EE353EA01E40D8B50007D842 /* PowMau-ICON-White */; };
 		EE353EA31E40F4720007D842 /* PowMauICON.PNG in Resources */ = {isa = PBXBuildFile; fileRef = EE353EA21E40F4720007D842 /* PowMauICON.PNG */; };
+		EE353EA61E4115790007D842 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE353EA51E4115790007D842 /* LoginScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EE353E9E1E405B300007D842 /* ICON */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ICON; sourceTree = "<group>"; };
 		EE353EA01E40D8B50007D842 /* PowMau-ICON-White */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "PowMau-ICON-White"; sourceTree = "<group>"; };
 		EE353EA21E40F4720007D842 /* PowMauICON.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PowMauICON.PNG; sourceTree = "<group>"; };
+		EE353EA51E4115790007D842 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			children = (
 				EE353E841E403D5B0007D842 /* AppDelegate.swift */,
 				EE353E961E404AB60007D842 /* Logic */,
+				EE353EA41E4115430007D842 /* Auth / Login */,
 				EE353E971E404AC30007D842 /* UI */,
 				EE353E991E404BBD0007D842 /* Images */,
 				EE353E901E403D5B0007D842 /* Info.plist */,
@@ -106,6 +109,14 @@
 				EE353E9E1E405B300007D842 /* ICON */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		EE353EA41E4115430007D842 /* Auth / Login */ = {
+			isa = PBXGroup;
+			children = (
+				EE353EA51E4115790007D842 /* LoginScreenViewController.swift */,
+			);
+			name = "Auth / Login";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +198,7 @@
 			files = (
 				EE353E871E403D5B0007D842 /* ViewController.swift in Sources */,
 				EE353E851E403D5B0007D842 /* AppDelegate.swift in Sources */,
+				EE353EA61E4115790007D842 /* LoginScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
