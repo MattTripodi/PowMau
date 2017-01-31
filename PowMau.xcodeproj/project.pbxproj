@@ -12,6 +12,8 @@
 		EE353E8A1E403D5B0007D842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE353E881E403D5B0007D842 /* Main.storyboard */; };
 		EE353E8C1E403D5B0007D842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE353E8B1E403D5B0007D842 /* Assets.xcassets */; };
 		EE353E8F1E403D5B0007D842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE353E8D1E403D5B0007D842 /* LaunchScreen.storyboard */; };
+		EE353E9D1E404FD00007D842 /* POWMAU_Logo 1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE353E9C1E404FD00007D842 /* POWMAU_Logo 1.png */; };
+		EE353E9F1E405B300007D842 /* ICON in Resources */ = {isa = PBXBuildFile; fileRef = EE353E9E1E405B300007D842 /* ICON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		EE353E8B1E403D5B0007D842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE353E8E1E403D5B0007D842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE353E901E403D5B0007D842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE353E9C1E404FD00007D842 /* POWMAU_Logo 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "POWMAU_Logo 1.png"; sourceTree = "<group>"; };
+		EE353E9E1E405B300007D842 /* ICON */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ICON; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,47 @@
 			isa = PBXGroup;
 			children = (
 				EE353E841E403D5B0007D842 /* AppDelegate.swift */,
-				EE353E861E403D5B0007D842 /* ViewController.swift */,
-				EE353E881E403D5B0007D842 /* Main.storyboard */,
-				EE353E8B1E403D5B0007D842 /* Assets.xcassets */,
-				EE353E8D1E403D5B0007D842 /* LaunchScreen.storyboard */,
+				EE353E961E404AB60007D842 /* Logic */,
+				EE353E971E404AC30007D842 /* UI */,
+				EE353E991E404BBD0007D842 /* Images */,
 				EE353E901E403D5B0007D842 /* Info.plist */,
 			);
 			path = PowMau;
+			sourceTree = "<group>";
+		};
+		EE353E961E404AB60007D842 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				EE353E861E403D5B0007D842 /* ViewController.swift */,
+				EE353E981E404B2E0007D842 /* Cells */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		EE353E971E404AC30007D842 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EE353E881E403D5B0007D842 /* Main.storyboard */,
+				EE353E8D1E403D5B0007D842 /* LaunchScreen.storyboard */,
+				EE353E8B1E403D5B0007D842 /* Assets.xcassets */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		EE353E981E404B2E0007D842 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		EE353E991E404BBD0007D842 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EE353E9C1E404FD00007D842 /* POWMAU_Logo 1.png */,
+				EE353E9E1E405B300007D842 /* ICON */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE353E8F1E403D5B0007D842 /* LaunchScreen.storyboard in Resources */,
+				EE353E9F1E405B300007D842 /* ICON in Resources */,
 				EE353E8C1E403D5B0007D842 /* Assets.xcassets in Resources */,
+				EE353E9D1E404FD00007D842 /* POWMAU_Logo 1.png in Resources */,
 				EE353E8A1E403D5B0007D842 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
