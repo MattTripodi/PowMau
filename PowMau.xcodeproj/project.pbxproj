@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE353E851E403D5B0007D842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE353E841E403D5B0007D842 /* AppDelegate.swift */; };
+		EE353E871E403D5B0007D842 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE353E861E403D5B0007D842 /* ViewController.swift */; };
+		EE353E8A1E403D5B0007D842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE353E881E403D5B0007D842 /* Main.storyboard */; };
+		EE353E8C1E403D5B0007D842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE353E8B1E403D5B0007D842 /* Assets.xcassets */; };
+		EE353E8F1E403D5B0007D842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE353E8D1E403D5B0007D842 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE353E811E403D5B0007D842 /* PowMau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowMau.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE353E841E403D5B0007D842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE353E861E403D5B0007D842 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE353E891E403D5B0007D842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE353E8B1E403D5B0007D842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE353E8E1E403D5B0007D842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE353E901E403D5B0007D842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE353E7E1E403D5B0007D842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE353E781E403D5B0007D842 = {
+			isa = PBXGroup;
+			children = (
+				EE353E831E403D5B0007D842 /* PowMau */,
+				EE353E821E403D5B0007D842 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE353E821E403D5B0007D842 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE353E811E403D5B0007D842 /* PowMau.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE353E831E403D5B0007D842 /* PowMau */ = {
+			isa = PBXGroup;
+			children = (
+				EE353E841E403D5B0007D842 /* AppDelegate.swift */,
+				EE353E861E403D5B0007D842 /* ViewController.swift */,
+				EE353E881E403D5B0007D842 /* Main.storyboard */,
+				EE353E8B1E403D5B0007D842 /* Assets.xcassets */,
+				EE353E8D1E403D5B0007D842 /* LaunchScreen.storyboard */,
+				EE353E901E403D5B0007D842 /* Info.plist */,
+			);
+			path = PowMau;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE353E801E403D5B0007D842 /* PowMau */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE353E931E403D5B0007D842 /* Build configuration list for PBXNativeTarget "PowMau" */;
+			buildPhases = (
+				EE353E7D1E403D5B0007D842 /* Sources */,
+				EE353E7E1E403D5B0007D842 /* Frameworks */,
+				EE353E7F1E403D5B0007D842 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PowMau;
+			productName = PowMau;
+			productReference = EE353E811E403D5B0007D842 /* PowMau.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE353E791E403D5B0007D842 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Matt Tripodi";
+				TargetAttributes = {
+					EE353E801E403D5B0007D842 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = VJQVDWQ9VC;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EE353E7C1E403D5B0007D842 /* Build configuration list for PBXProject "PowMau" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE353E781E403D5B0007D842;
+			productRefGroup = EE353E821E403D5B0007D842 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE353E801E403D5B0007D842 /* PowMau */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE353E7F1E403D5B0007D842 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE353E8F1E403D5B0007D842 /* LaunchScreen.storyboard in Resources */,
+				EE353E8C1E403D5B0007D842 /* Assets.xcassets in Resources */,
+				EE353E8A1E403D5B0007D842 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE353E7D1E403D5B0007D842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE353E871E403D5B0007D842 /* ViewController.swift in Sources */,
+				EE353E851E403D5B0007D842 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE353E881E403D5B0007D842 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE353E891E403D5B0007D842 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE353E8D1E403D5B0007D842 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE353E8E1E403D5B0007D842 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE353E911E403D5B0007D842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE353E921E403D5B0007D842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE353E941E403D5B0007D842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VJQVDWQ9VC;
+				INFOPLIST_FILE = PowMau/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matttripodi.PowMau;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EE353E951E403D5B0007D842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VJQVDWQ9VC;
+				INFOPLIST_FILE = PowMau/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matttripodi.PowMau;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE353E7C1E403D5B0007D842 /* Build configuration list for PBXProject "PowMau" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE353E911E403D5B0007D842 /* Debug */,
+				EE353E921E403D5B0007D842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE353E931E403D5B0007D842 /* Build configuration list for PBXNativeTarget "PowMau" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE353E941E403D5B0007D842 /* Debug */,
+				EE353E951E403D5B0007D842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE353E791E403D5B0007D842 /* Project object */;
+}
