@@ -17,6 +17,7 @@
 		EE353EA11E40D8B50007D842 /* PowMau-ICON-White in Resources */ = {isa = PBXBuildFile; fileRef = EE353EA01E40D8B50007D842 /* PowMau-ICON-White */; };
 		EE353EA31E40F4720007D842 /* PowMauICON.PNG in Resources */ = {isa = PBXBuildFile; fileRef = EE353EA21E40F4720007D842 /* PowMauICON.PNG */; };
 		EE353EA61E4115790007D842 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE353EA51E4115790007D842 /* LoginScreenViewController.swift */; };
+		EE353EAC1E412BE40007D842 /* LemonMilk.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE353EAB1E412BE40007D842 /* LemonMilk.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		EE353EA01E40D8B50007D842 /* PowMau-ICON-White */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "PowMau-ICON-White"; sourceTree = "<group>"; };
 		EE353EA21E40F4720007D842 /* PowMauICON.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PowMauICON.PNG; sourceTree = "<group>"; };
 		EE353EA51E4115790007D842 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		EE353EAB1E412BE40007D842 /* LemonMilk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LemonMilk.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				EE353EA41E4115430007D842 /* Auth / Login */,
 				EE353E971E404AC30007D842 /* UI */,
 				EE353E991E404BBD0007D842 /* Images */,
+				EE353EAA1E412BCE0007D842 /* Fonts */,
 				EE353E901E403D5B0007D842 /* Info.plist */,
 			);
 			path = PowMau;
@@ -117,6 +120,14 @@
 				EE353EA51E4115790007D842 /* LoginScreenViewController.swift */,
 			);
 			name = "Auth / Login";
+			sourceTree = "<group>";
+		};
+		EE353EAA1E412BCE0007D842 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EE353EAB1E412BE40007D842 /* LemonMilk.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 				EE353E8F1E403D5B0007D842 /* LaunchScreen.storyboard in Resources */,
 				EE353E9F1E405B300007D842 /* ICON in Resources */,
 				EE353E8C1E403D5B0007D842 /* Assets.xcassets in Resources */,
+				EE353EAC1E412BE40007D842 /* LemonMilk.otf in Resources */,
 				EE353E9D1E404FD00007D842 /* POWMAU_Logo 1.png in Resources */,
 				EE353EA31E40F4720007D842 /* PowMauICON.PNG in Resources */,
 				EE353E8A1E403D5B0007D842 /* Main.storyboard in Resources */,
