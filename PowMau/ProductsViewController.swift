@@ -14,6 +14,7 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
 	@IBOutlet weak var tableView: UITableView!
 	
 
+	// MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
 		

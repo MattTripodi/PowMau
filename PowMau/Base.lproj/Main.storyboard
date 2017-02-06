@@ -50,7 +50,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProductCell" rowHeight="124" id="kTk-F9-aS1" customClass="ProductsTableViewCell" customModule="PowMau" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProductsCell" rowHeight="124" id="kTk-F9-aS1" customClass="ProductsTableViewCell" customModule="PowMau" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="124"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kTk-F9-aS1" id="DEX-cf-TEF">
@@ -84,8 +84,18 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="productBrand" destination="OtZ-OT-fX6" id="f7H-A2-78K"/>
+                                            <outlet property="productDescription" destination="M8R-I4-gVm" id="YwG-Ho-B8t"/>
+                                            <outlet property="productImage" destination="ORb-HX-h2a" id="E2O-Nd-uEY"/>
+                                            <outlet property="productName" destination="crb-iE-wNN" id="7yw-GE-gVc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="KOE-6a-se4"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fWC-fa-hLV"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -143,6 +153,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="bkE-Ku-wvW" id="2LJ-NF-rt9"/>
+                                    <outlet property="delegate" destination="bkE-Ku-wvW" id="Jgq-h0-4jp"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -159,7 +173,7 @@
         <!--Account-->
         <scene sceneID="m0c-Up-DS6">
             <objects>
-                <viewController id="sew-T1-KKe" sceneMemberID="viewController">
+                <viewController id="sew-T1-KKe" customClass="AccountViewController" customModule="PowMau" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DCc-L2-Dn6"/>
                         <viewControllerLayoutGuide type="bottom" id="dbF-90-y6p"/>
@@ -275,19 +289,40 @@
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C3Z-zd-SEJ">
                                 <rect key="frame" x="4" y="363" width="101" height="103"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BFp-Wq-XAi">
-                                <rect key="frame" x="219" y="363" width="101" height="103"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.17254901959999999" green="0.59788876769999999" blue="0.70938164000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cvi-gI-rKo">
                                 <rect key="frame" x="113" y="363" width="101" height="103"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.17254901959999999" green="0.59788876769999999" blue="0.70938164000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BFp-Wq-XAi">
+                                <rect key="frame" x="219" y="363" width="101" height="103"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.17254901959999999" green="0.59788876769999999" blue="0.70938164000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvq-DY-soS">
+                                <rect key="frame" x="13" y="481" width="294" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LemonMilk" family="Lemon/Milk" pointSize="19"/>
+                                <state key="normal" title="Save!">
+                                    <color key="titleColor" red="0.17254901959999999" green="0.59788876769999999" blue="0.70938164000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="sew-T1-KKe" eventType="touchUpInside" id="TPm-NJ-oWo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="User_000000_25" selectedImage="User_000000_25" id="E3K-5H-kr7"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="6Oz-g8-ooa" id="RBW-DO-d2Q"/>
+                        <outlet property="fullNameTextField" destination="kcf-vH-an6" id="Bip-Ey-twD"/>
+                        <outlet property="genderSwitch" destination="Kow-cD-gvD" id="Gd9-ZD-a2a"/>
+                        <outlet property="passwordTextField" destination="bgL-lB-HfH" id="8iH-Mn-jcE"/>
+                        <outlet property="saveButtonOutlet" destination="gvq-DY-soS" id="NvU-sr-wBn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tqj-RA-3Io" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -466,7 +501,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Head over to the next page and fill out some information for us" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hP-iY-qVr">
                                 <rect key="frame" x="16" y="469" width="288" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="LemonMilk" family="Lemon/Milk" pointSize="10"/>
+                                <fontDescription key="fontDescription" name="LemonMilk" family="Lemon/Milk" pointSize="13"/>
                                 <color key="textColor" red="0.9805663228" green="0.96496254209999999" blue="0.96458369489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -618,7 +653,10 @@
                     </view>
                     <connections>
                         <outlet property="continueButtonOutlet" destination="7Oi-iN-g6j" id="rnv-bg-WbU"/>
+                        <outlet property="emailTextField" destination="ISV-0G-afv" id="nWn-Dl-9ok"/>
+                        <outlet property="fullNameTextField" destination="Wmh-J6-KaN" id="NIz-gk-YNE"/>
                         <outlet property="genderSwitch" destination="MnW-X4-6CU" id="bFJ-TB-Ip2"/>
+                        <outlet property="passwordTextField" destination="Xi2-sV-sWE" id="NhH-O0-X0v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N42-Ar-SjO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -636,6 +674,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.17148292060000001" green="0.59788876769999999" blue="0.70938164000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="8Wl-9y-Mzu"/>
