@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		EE353E851E403D5B0007D842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE353E841E403D5B0007D842 /* AppDelegate.swift */; };
 		EE353E871E403D5B0007D842 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE353E861E403D5B0007D842 /* ViewController.swift */; };
-		EE353E8A1E403D5B0007D842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE353E881E403D5B0007D842 /* Main.storyboard */; };
+		EE353E8A1E403D5B0007D842 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		EE353E8C1E403D5B0007D842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE353E8B1E403D5B0007D842 /* Assets.xcassets */; };
 		EE353E8F1E403D5B0007D842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE353E8D1E403D5B0007D842 /* LaunchScreen.storyboard */; };
 		EE353E9D1E404FD00007D842 /* POWMAU_Logo 1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE353E9C1E404FD00007D842 /* POWMAU_Logo 1.png */; };
@@ -18,13 +18,20 @@
 		EE353EA31E40F4720007D842 /* PowMauICON.PNG in Resources */ = {isa = PBXBuildFile; fileRef = EE353EA21E40F4720007D842 /* PowMauICON.PNG */; };
 		EE353EA61E4115790007D842 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE353EA51E4115790007D842 /* LoginScreenViewController.swift */; };
 		EE353EAC1E412BE40007D842 /* LemonMilk.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE353EAB1E412BE40007D842 /* LemonMilk.otf */; };
+		EEA84D081E48DFCB008609B6 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D071E48DFCB008609B6 /* ProductsViewController.swift */; };
+		EEA84D0A1E48E014008609B6 /* LifestyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D091E48E014008609B6 /* LifestyleViewController.swift */; };
+		EEA84D0C1E48E02D008609B6 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D0B1E48E02D008609B6 /* AccountViewController.swift */; };
+		EEA84D0E1E48E1A7008609B6 /* ProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D0D1E48E1A7008609B6 /* ProductsTableViewCell.swift */; };
+		EEA84D101E48E2DC008609B6 /* SignUpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D0F1E48E2DC008609B6 /* SignUpScreenViewController.swift */; };
+		EEA84D371E49027E008609B6 /* ThankYouForSigningUpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D361E49027E008609B6 /* ThankYouForSigningUpScreenViewController.swift */; };
+		EEA84D3A1E491B45008609B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA84D381E491B45008609B6 /* Main.storyboard */; };
+		EEA84D3C1E492546008609B6 /* LifestyleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D3B1E492546008609B6 /* LifestyleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE353E811E403D5B0007D842 /* PowMau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowMau.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE353E841E403D5B0007D842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE353E861E403D5B0007D842 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE353E891E403D5B0007D842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE353E8B1E403D5B0007D842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE353E8E1E403D5B0007D842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE353E901E403D5B0007D842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +41,14 @@
 		EE353EA21E40F4720007D842 /* PowMauICON.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PowMauICON.PNG; sourceTree = "<group>"; };
 		EE353EA51E4115790007D842 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		EE353EAB1E412BE40007D842 /* LemonMilk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LemonMilk.otf; sourceTree = "<group>"; };
+		EEA84D071E48DFCB008609B6 /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		EEA84D091E48E014008609B6 /* LifestyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifestyleViewController.swift; sourceTree = "<group>"; };
+		EEA84D0B1E48E02D008609B6 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		EEA84D0D1E48E1A7008609B6 /* ProductsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewCell.swift; sourceTree = "<group>"; };
+		EEA84D0F1E48E2DC008609B6 /* SignUpScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpScreenViewController.swift; sourceTree = "<group>"; };
+		EEA84D361E49027E008609B6 /* ThankYouForSigningUpScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThankYouForSigningUpScreenViewController.swift; sourceTree = "<group>"; };
+		EEA84D391E491B45008609B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEA84D3B1E492546008609B6 /* LifestyleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifestyleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				EE353E861E403D5B0007D842 /* ViewController.swift */,
+				EEA84D071E48DFCB008609B6 /* ProductsViewController.swift */,
+				EEA84D091E48E014008609B6 /* LifestyleViewController.swift */,
+				EEA84D0B1E48E02D008609B6 /* AccountViewController.swift */,
 				EE353E981E404B2E0007D842 /* Cells */,
 			);
 			name = Logic;
@@ -89,7 +107,7 @@
 		EE353E971E404AC30007D842 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				EE353E881E403D5B0007D842 /* Main.storyboard */,
+				EEA84D381E491B45008609B6 /* Main.storyboard */,
 				EE353E8D1E403D5B0007D842 /* LaunchScreen.storyboard */,
 				EE353E8B1E403D5B0007D842 /* Assets.xcassets */,
 			);
@@ -99,6 +117,8 @@
 		EE353E981E404B2E0007D842 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				EEA84D0D1E48E1A7008609B6 /* ProductsTableViewCell.swift */,
+				EEA84D3B1E492546008609B6 /* LifestyleTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -118,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				EE353EA51E4115790007D842 /* LoginScreenViewController.swift */,
+				EEA84D361E49027E008609B6 /* ThankYouForSigningUpScreenViewController.swift */,
+				EEA84D0F1E48E2DC008609B6 /* SignUpScreenViewController.swift */,
 			);
 			name = "Auth / Login";
 			sourceTree = "<group>";
@@ -196,8 +218,9 @@
 				EE353E8C1E403D5B0007D842 /* Assets.xcassets in Resources */,
 				EE353EAC1E412BE40007D842 /* LemonMilk.otf in Resources */,
 				EE353E9D1E404FD00007D842 /* POWMAU_Logo 1.png in Resources */,
+				EEA84D3A1E491B45008609B6 /* Main.storyboard in Resources */,
 				EE353EA31E40F4720007D842 /* PowMauICON.PNG in Resources */,
-				EE353E8A1E403D5B0007D842 /* Main.storyboard in Resources */,
+				EE353E8A1E403D5B0007D842 /* (null) in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,29 +231,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA84D371E49027E008609B6 /* ThankYouForSigningUpScreenViewController.swift in Sources */,
+				EEA84D101E48E2DC008609B6 /* SignUpScreenViewController.swift in Sources */,
 				EE353E871E403D5B0007D842 /* ViewController.swift in Sources */,
 				EE353E851E403D5B0007D842 /* AppDelegate.swift in Sources */,
+				EEA84D0E1E48E1A7008609B6 /* ProductsTableViewCell.swift in Sources */,
+				EEA84D0C1E48E02D008609B6 /* AccountViewController.swift in Sources */,
+				EEA84D081E48DFCB008609B6 /* ProductsViewController.swift in Sources */,
+				EEA84D3C1E492546008609B6 /* LifestyleTableViewCell.swift in Sources */,
 				EE353EA61E4115790007D842 /* LoginScreenViewController.swift in Sources */,
+				EEA84D0A1E48E014008609B6 /* LifestyleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EE353E881E403D5B0007D842 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE353E891E403D5B0007D842 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EE353E8D1E403D5B0007D842 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EE353E8E1E403D5B0007D842 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EEA84D381E491B45008609B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEA84D391E491B45008609B6 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
