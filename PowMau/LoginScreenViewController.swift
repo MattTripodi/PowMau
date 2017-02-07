@@ -36,11 +36,6 @@ class LoginScreenViewController: UIViewController, UITextFieldDelegate {
 		
 		
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 	
 	// MARK: To Control the Keyboard
 	// To dismiss the keyboard when the user touches outside of the keyboard

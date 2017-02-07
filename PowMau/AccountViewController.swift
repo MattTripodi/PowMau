@@ -16,9 +16,6 @@ class AccountViewController: UIViewController, UITextFieldDelegate {
 	@IBOutlet weak var emailTextField: UITextField!
 	@IBOutlet weak var passwordTextField: UITextField!
 	
-
-	
-	
 	// MARK: IBActions
 	@IBAction func saveButtonTapped(_ sender: UIButton) {
 	}

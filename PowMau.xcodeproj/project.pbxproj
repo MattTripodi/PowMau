@@ -13,8 +13,6 @@
 		EE353E8C1E403D5B0007D842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE353E8B1E403D5B0007D842 /* Assets.xcassets */; };
 		EE353E8F1E403D5B0007D842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE353E8D1E403D5B0007D842 /* LaunchScreen.storyboard */; };
 		EE353E9D1E404FD00007D842 /* POWMAU_Logo 1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE353E9C1E404FD00007D842 /* POWMAU_Logo 1.png */; };
-		EE353E9F1E405B300007D842 /* ICON in Resources */ = {isa = PBXBuildFile; fileRef = EE353E9E1E405B300007D842 /* ICON */; };
-		EE353EA11E40D8B50007D842 /* PowMau-ICON-White in Resources */ = {isa = PBXBuildFile; fileRef = EE353EA01E40D8B50007D842 /* PowMau-ICON-White */; };
 		EE353EA31E40F4720007D842 /* PowMauICON.PNG in Resources */ = {isa = PBXBuildFile; fileRef = EE353EA21E40F4720007D842 /* PowMauICON.PNG */; };
 		EE353EA61E4115790007D842 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE353EA51E4115790007D842 /* LoginScreenViewController.swift */; };
 		EE353EAC1E412BE40007D842 /* LemonMilk.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE353EAB1E412BE40007D842 /* LemonMilk.otf */; };
@@ -26,6 +24,10 @@
 		EEA84D371E49027E008609B6 /* ThankYouForSigningUpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D361E49027E008609B6 /* ThankYouForSigningUpScreenViewController.swift */; };
 		EEA84D3A1E491B45008609B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA84D381E491B45008609B6 /* Main.storyboard */; };
 		EEA84D3C1E492546008609B6 /* LifestyleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D3B1E492546008609B6 /* LifestyleTableViewCell.swift */; };
+		EEA84D3E1E498B02008609B6 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D3D1E498B02008609B6 /* NewsViewController.swift */; };
+		EEA84D401E498B2F008609B6 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D3F1E498B2F008609B6 /* NewsTableViewCell.swift */; };
+		EEA84D431E498FBA008609B6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D421E498FBA008609B6 /* Model.swift */; };
+		EEA84D451E4A2E26008609B6 /* AppICON in Resources */ = {isa = PBXBuildFile; fileRef = EEA84D441E4A2E26008609B6 /* AppICON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +38,6 @@
 		EE353E8E1E403D5B0007D842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE353E901E403D5B0007D842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE353E9C1E404FD00007D842 /* POWMAU_Logo 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "POWMAU_Logo 1.png"; sourceTree = "<group>"; };
-		EE353E9E1E405B300007D842 /* ICON */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ICON; sourceTree = "<group>"; };
-		EE353EA01E40D8B50007D842 /* PowMau-ICON-White */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "PowMau-ICON-White"; sourceTree = "<group>"; };
 		EE353EA21E40F4720007D842 /* PowMauICON.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PowMauICON.PNG; sourceTree = "<group>"; };
 		EE353EA51E4115790007D842 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		EE353EAB1E412BE40007D842 /* LemonMilk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LemonMilk.otf; sourceTree = "<group>"; };
@@ -49,6 +49,10 @@
 		EEA84D361E49027E008609B6 /* ThankYouForSigningUpScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThankYouForSigningUpScreenViewController.swift; sourceTree = "<group>"; };
 		EEA84D391E491B45008609B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEA84D3B1E492546008609B6 /* LifestyleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifestyleTableViewCell.swift; sourceTree = "<group>"; };
+		EEA84D3D1E498B02008609B6 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		EEA84D3F1E498B2F008609B6 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		EEA84D421E498FBA008609B6 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EEA84D441E4A2E26008609B6 /* AppICON */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppICON; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				EE353E841E403D5B0007D842 /* AppDelegate.swift */,
+				EEA84D411E498F43008609B6 /* DataModel */,
 				EE353E961E404AB60007D842 /* Logic */,
 				EE353EA41E4115430007D842 /* Auth / Login */,
 				EE353E971E404AC30007D842 /* UI */,
@@ -99,6 +104,7 @@
 				EEA84D071E48DFCB008609B6 /* ProductsViewController.swift */,
 				EEA84D091E48E014008609B6 /* LifestyleViewController.swift */,
 				EEA84D0B1E48E02D008609B6 /* AccountViewController.swift */,
+				EEA84D3D1E498B02008609B6 /* NewsViewController.swift */,
 				EE353E981E404B2E0007D842 /* Cells */,
 			);
 			name = Logic;
@@ -119,6 +125,7 @@
 			children = (
 				EEA84D0D1E48E1A7008609B6 /* ProductsTableViewCell.swift */,
 				EEA84D3B1E492546008609B6 /* LifestyleTableViewCell.swift */,
+				EEA84D3F1E498B2F008609B6 /* NewsTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -128,8 +135,7 @@
 			children = (
 				EE353E9C1E404FD00007D842 /* POWMAU_Logo 1.png */,
 				EE353EA21E40F4720007D842 /* PowMauICON.PNG */,
-				EE353EA01E40D8B50007D842 /* PowMau-ICON-White */,
-				EE353E9E1E405B300007D842 /* ICON */,
+				EEA84D441E4A2E26008609B6 /* AppICON */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -150,6 +156,14 @@
 				EE353EAB1E412BE40007D842 /* LemonMilk.otf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		EEA84D411E498F43008609B6 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEA84D421E498FBA008609B6 /* Model.swift */,
+			);
+			name = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,9 +226,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE353EA11E40D8B50007D842 /* PowMau-ICON-White in Resources */,
 				EE353E8F1E403D5B0007D842 /* LaunchScreen.storyboard in Resources */,
-				EE353E9F1E405B300007D842 /* ICON in Resources */,
+				EEA84D451E4A2E26008609B6 /* AppICON in Resources */,
 				EE353E8C1E403D5B0007D842 /* Assets.xcassets in Resources */,
 				EE353EAC1E412BE40007D842 /* LemonMilk.otf in Resources */,
 				EE353E9D1E404FD00007D842 /* POWMAU_Logo 1.png in Resources */,
@@ -233,8 +246,11 @@
 			files = (
 				EEA84D371E49027E008609B6 /* ThankYouForSigningUpScreenViewController.swift in Sources */,
 				EEA84D101E48E2DC008609B6 /* SignUpScreenViewController.swift in Sources */,
+				EEA84D401E498B2F008609B6 /* NewsTableViewCell.swift in Sources */,
 				EE353E871E403D5B0007D842 /* ViewController.swift in Sources */,
 				EE353E851E403D5B0007D842 /* AppDelegate.swift in Sources */,
+				EEA84D3E1E498B02008609B6 /* NewsViewController.swift in Sources */,
+				EEA84D431E498FBA008609B6 /* Model.swift in Sources */,
 				EEA84D0E1E48E1A7008609B6 /* ProductsTableViewCell.swift in Sources */,
 				EEA84D0C1E48E02D008609B6 /* AccountViewController.swift in Sources */,
 				EEA84D081E48DFCB008609B6 /* ProductsViewController.swift in Sources */,
