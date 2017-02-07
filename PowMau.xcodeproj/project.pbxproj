@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74A316ADBAB3AE73E3DE6D55 /* Pods_PowMau.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5F33BAF681EF9457859EB5 /* Pods_PowMau.framework */; };
 		EE353E851E403D5B0007D842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE353E841E403D5B0007D842 /* AppDelegate.swift */; };
 		EE353E871E403D5B0007D842 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE353E861E403D5B0007D842 /* ViewController.swift */; };
-		EE353E8A1E403D5B0007D842 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE353E8A1E403D5B0007D842 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
 		EE353E8C1E403D5B0007D842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE353E8B1E403D5B0007D842 /* Assets.xcassets */; };
 		EE353E8F1E403D5B0007D842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE353E8D1E403D5B0007D842 /* LaunchScreen.storyboard */; };
 		EE353E9D1E404FD00007D842 /* POWMAU_Logo 1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE353E9C1E404FD00007D842 /* POWMAU_Logo 1.png */; };
@@ -28,9 +29,13 @@
 		EEA84D401E498B2F008609B6 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D3F1E498B2F008609B6 /* NewsTableViewCell.swift */; };
 		EEA84D431E498FBA008609B6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D421E498FBA008609B6 /* Model.swift */; };
 		EEA84D451E4A2E26008609B6 /* AppICON in Resources */ = {isa = PBXBuildFile; fileRef = EEA84D441E4A2E26008609B6 /* AppICON */; };
+		EEA84D471E4A5030008609B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEA84D461E4A5030008609B6 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		495C3982BCC8720151929605 /* Pods-PowMau.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowMau.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PowMau/Pods-PowMau.debug.xcconfig"; sourceTree = "<group>"; };
+		704DA18541E0D09D4453DDFE /* Pods-PowMau.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowMau.release.xcconfig"; path = "Pods/Target Support Files/Pods-PowMau/Pods-PowMau.release.xcconfig"; sourceTree = "<group>"; };
+		BD5F33BAF681EF9457859EB5 /* Pods_PowMau.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PowMau.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE353E811E403D5B0007D842 /* PowMau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowMau.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE353E841E403D5B0007D842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE353E861E403D5B0007D842 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +58,7 @@
 		EEA84D3F1E498B2F008609B6 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		EEA84D421E498FBA008609B6 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		EEA84D441E4A2E26008609B6 /* AppICON */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppICON; sourceTree = "<group>"; };
+		EEA84D461E4A5030008609B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +66,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74A316ADBAB3AE73E3DE6D55 /* Pods_PowMau.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B752DA5054445E9E4AC696E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				495C3982BCC8720151929605 /* Pods-PowMau.debug.xcconfig */,
+				704DA18541E0D09D4453DDFE /* Pods-PowMau.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7A713035C0065D0F2FF368D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD5F33BAF681EF9457859EB5 /* Pods_PowMau.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EE353E781E403D5B0007D842 = {
 			isa = PBXGroup;
 			children = (
 				EE353E831E403D5B0007D842 /* PowMau */,
 				EE353E821E403D5B0007D842 /* Products */,
+				B752DA5054445E9E4AC696E8 /* Pods */,
+				D7A713035C0065D0F2FF368D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +119,7 @@
 				EE353E991E404BBD0007D842 /* Images */,
 				EE353EAA1E412BCE0007D842 /* Fonts */,
 				EE353E901E403D5B0007D842 /* Info.plist */,
+				EEA84D461E4A5030008609B6 /* GoogleService-Info.plist */,
 			);
 			path = PowMau;
 			sourceTree = "<group>";
@@ -173,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE353E931E403D5B0007D842 /* Build configuration list for PBXNativeTarget "PowMau" */;
 			buildPhases = (
+				1B2ABED80EAB4839936B8426 /* [CP] Check Pods Manifest.lock */,
 				EE353E7D1E403D5B0007D842 /* Sources */,
 				EE353E7E1E403D5B0007D842 /* Frameworks */,
 				EE353E7F1E403D5B0007D842 /* Resources */,
+				E2970E3D117B7388C4288E51 /* [CP] Embed Pods Frameworks */,
+				CCA108F2FA7D74DCA9750EDC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA84D471E4A5030008609B6 /* GoogleService-Info.plist in Resources */,
 				EE353E8F1E403D5B0007D842 /* LaunchScreen.storyboard in Resources */,
 				EEA84D451E4A2E26008609B6 /* AppICON in Resources */,
 				EE353E8C1E403D5B0007D842 /* Assets.xcassets in Resources */,
@@ -233,11 +264,59 @@
 				EE353E9D1E404FD00007D842 /* POWMAU_Logo 1.png in Resources */,
 				EEA84D3A1E491B45008609B6 /* Main.storyboard in Resources */,
 				EE353EA31E40F4720007D842 /* PowMauICON.PNG in Resources */,
-				EE353E8A1E403D5B0007D842 /* (null) in Resources */,
+				EE353E8A1E403D5B0007D842 /* BuildFile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B2ABED80EAB4839936B8426 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CCA108F2FA7D74DCA9750EDC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PowMau/Pods-PowMau-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2970E3D117B7388C4288E51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PowMau/Pods-PowMau-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE353E7D1E403D5B0007D842 /* Sources */ = {
@@ -375,6 +454,7 @@
 		};
 		EE353E941E403D5B0007D842 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 495C3982BCC8720151929605 /* Pods-PowMau.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VJQVDWQ9VC;
@@ -388,6 +468,7 @@
 		};
 		EE353E951E403D5B0007D842 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 704DA18541E0D09D4453DDFE /* Pods-PowMau.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VJQVDWQ9VC;
