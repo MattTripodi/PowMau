@@ -12,7 +12,6 @@ class SignUpScreenViewController: UIViewController, UITextFieldDelegate {
 	
 	// MARK: IBOutlets
 	@IBOutlet weak var continueButtonOutlet: UIButton!
-	@IBOutlet weak var genderSwitch: UISwitch!
 	@IBOutlet weak var fullNameTextField: UITextField!
 	@IBOutlet weak var emailTextField: UITextField!
 	@IBOutlet weak var passwordTextField: UITextField!
@@ -27,11 +26,9 @@ class SignUpScreenViewController: UIViewController, UITextFieldDelegate {
 		continueButtonOutlet.backgroundColor = .clear
 		continueButtonOutlet.layer.cornerRadius = 5
 		continueButtonOutlet.layer.borderWidth = 1
-		continueButtonOutlet.layer.borderColor = UIColor(red: 44, green: 152, blue: 181, alpha: 1).cgColor
+		continueButtonOutlet.layer.borderColor = UIColor(red: 44 / 255, green: 152 / 255, blue: 181 / 255, alpha: 1).cgColor
 		//---------------------------------------------------------
-		// To fit switch off background color to pink
-		genderSwitch.layer.cornerRadius = 16.0
-		//---------------------------------------------------------
+	
 	}
 	
 	

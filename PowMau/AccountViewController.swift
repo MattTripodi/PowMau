@@ -11,11 +11,12 @@ import UIKit
 class AccountViewController: UIViewController, UITextFieldDelegate {
 	
 	// MARK: IBOutlets
-	@IBOutlet weak var genderSwitch: UISwitch!
 	@IBOutlet weak var saveButtonOutlet: UIButton!
 	@IBOutlet weak var fullNameTextField: UITextField!
 	@IBOutlet weak var emailTextField: UITextField!
 	@IBOutlet weak var passwordTextField: UITextField!
+	
+
 	
 	
 	// MARK: IBActions
@@ -30,11 +31,11 @@ class AccountViewController: UIViewController, UITextFieldDelegate {
 		saveButtonOutlet.backgroundColor = .clear
 		saveButtonOutlet.layer.cornerRadius = 5
 		saveButtonOutlet.layer.borderWidth = 1
-		saveButtonOutlet.layer.borderColor = UIColor(red: 44, green: 152, blue: 181, alpha: 1).cgColor
+		saveButtonOutlet.layer.borderColor = UIColor(red: 44 / 255, green: 152 / 255, blue: 181 / 255, alpha: 1).cgColor
 		//---------------------------------------------------------
-		// To fit switch off background color to pink
-		genderSwitch.layer.cornerRadius = 16.0
-		//---------------------------------------------------------
+
+		
+	
 		
 	}
 	
