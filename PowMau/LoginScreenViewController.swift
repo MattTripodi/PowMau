@@ -7,25 +7,51 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class LoginScreenViewController: UIViewController, UITextFieldDelegate {
 	
-	// MARK: IBOutlets 
-	@IBOutlet weak var userNameTextField: UITextField!
+	// MARK: IBOutlets
+	@IBOutlet weak var emailTextField: UITextField!
 	@IBOutlet weak var passwordTextField: UITextField!
 	@IBOutlet weak var loginButtonOutlet: UIButton!
 	
-	// MARK: IBActions 
+	// MARK: IBActions ---------------------------------------------------------------
 	@IBAction func loginButton(_ sender: UIButton) {
-	
+		
+		self.login()
+		
 	}
-	
-	@IBAction func signUpButton(_ sender: UIButton) {
+	// Login Function
+	func login() {
+		
+		FIRAuth.auth()?.signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: {
+			user, error in
+			
+			if error != nil {
+				
+				print("Incorrect")
+				
+				// Alert Message
+				let alert = UIAlertController(title: "Alert!", message: "Your email or password was entered incorrectly.", preferredStyle: UIAlertControllerStyle.alert)
+				alert.addAction(UIAlertAction(title: "Try again", style: UIAlertActionStyle.default, handler: nil))
+				self.present(alert, animated: true, completion: nil)
+				// ------------------------------------------------------
+				
+			} else {
+				
+				print("Success!")
+			}
+		})
 	}
+	// -----------------------------------------------------------------------------------------
 	
 	
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	
+	// MARK: ViewDidLoad --------------------------------------------------------------------
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		// Customizing Login Button Boarder
 		loginButtonOutlet.backgroundColor = .clear
@@ -35,7 +61,7 @@ class LoginScreenViewController: UIViewController, UITextFieldDelegate {
 		//---------------------------------------------------------
 		
 		
-    }
+	}
 	
 	// MARK: To Control the Keyboard
 	// To dismiss the keyboard when the user touches outside of the keyboard
