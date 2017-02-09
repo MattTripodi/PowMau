@@ -9,21 +9,26 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 
 class SignUpScreenViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 	
+	var ref: FIRDatabaseReference!
+	
 	// MARK: IBOutlets
-	@IBOutlet weak var continueButtonOutlet: UIButton!
+	@IBOutlet weak var saveButtonOutlet: UIButton!
 	@IBOutlet weak var fullNameTextField: UITextField!
 	@IBOutlet weak var emailTextField: UITextField!
 	@IBOutlet weak var passwordTextField: UITextField!
 	@IBOutlet weak var SegmentedControlOutlet: UISegmentedControl!
 	@IBOutlet weak var sizePicker: UIPickerView!
+	@IBOutlet weak var maleOrFemaleLabel: UILabel!
+	
 	
 	// MARK: IBActions
-	@IBAction func continueButtonTapped(_ sender: UIButton) {
+	@IBAction func saveButtonTapped(_ sender: UIButton) {
 		
-		// Creating a new User
+		// Creating a new User and storing data
 		FIRAuth.auth()?.createUser(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: {
 			user, error in
 			
@@ -38,12 +43,31 @@ class SignUpScreenViewController: UIViewController, UITextFieldDelegate, UIPicke
 				
 			} else {
 				
-				print("User Created")
+				let userID: String = user!.uid
+				let userFullName: String = self.fullNameTextField.text!
+				let userEmail: String = self.emailTextField.text!
+				let userGender: String = self.maleOrFemaleLabel.text!
+				
+				self.ref.child("Users").child(userID).setValue(["Full Name": userFullName ,"Email": userEmail, "Gender": userGender])
+				
+				print("User Created: " + user!.uid)
 				
 			}
 		})
 	}
-	// --------------------------------------------------------------------------
+	
+	
+	@IBAction func MaleOrFemaleControl(_ sender: UISegmentedControl) {
+		
+		if SegmentedControlOutlet.selectedSegmentIndex == 0 {
+			maleOrFemaleLabel.text = "Male"
+			print(maleOrFemaleLabel)
+		} else {
+			maleOrFemaleLabel.text = "Female"
+			print(maleOrFemaleLabel)
+		}
+	}
+	
 	
 	
 	// MARK: ViewDidLoad --------------------------------------------------------
@@ -51,10 +75,10 @@ class SignUpScreenViewController: UIViewController, UITextFieldDelegate, UIPicke
 		super.viewDidLoad()
 		
 		// Customizing Continue Button Boarder
-		continueButtonOutlet.backgroundColor = .clear
-		continueButtonOutlet.layer.cornerRadius = 5
-		continueButtonOutlet.layer.borderWidth = 1
-		continueButtonOutlet.layer.borderColor = UIColor(red: 44 / 255, green: 152 / 255, blue: 181 / 255, alpha: 1).cgColor
+		saveButtonOutlet.backgroundColor = .clear
+		saveButtonOutlet.layer.cornerRadius = 5
+		saveButtonOutlet.layer.borderWidth = 1
+		saveButtonOutlet.layer.borderColor = UIColor(red: 44 / 255, green: 152 / 255, blue: 181 / 255, alpha: 1).cgColor
 		//---------------------------------------------------------
 		
 		// Picker View
@@ -62,6 +86,9 @@ class SignUpScreenViewController: UIViewController, UITextFieldDelegate, UIPicke
 		sizePicker.dataSource = self
 		wheelContents = [shirtSizes, pantsSizes, shoeSizes]
 		//--------------------------------------------------------
+		
+		ref = FIRDatabase.database().reference()
+		
 	}
 	
 	

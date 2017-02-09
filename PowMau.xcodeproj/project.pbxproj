@@ -10,7 +10,7 @@
 		74A316ADBAB3AE73E3DE6D55 /* Pods_PowMau.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5F33BAF681EF9457859EB5 /* Pods_PowMau.framework */; };
 		EE353E851E403D5B0007D842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE353E841E403D5B0007D842 /* AppDelegate.swift */; };
 		EE353E871E403D5B0007D842 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE353E861E403D5B0007D842 /* ViewController.swift */; };
-		EE353E8A1E403D5B0007D842 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE353E8A1E403D5B0007D842 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		EE353E8C1E403D5B0007D842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE353E8B1E403D5B0007D842 /* Assets.xcassets */; };
 		EE353E8F1E403D5B0007D842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE353E8D1E403D5B0007D842 /* LaunchScreen.storyboard */; };
 		EE353E9D1E404FD00007D842 /* POWMAU_Logo 1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE353E9C1E404FD00007D842 /* POWMAU_Logo 1.png */; };
@@ -264,7 +264,7 @@
 				EE353E9D1E404FD00007D842 /* POWMAU_Logo 1.png in Resources */,
 				EEA84D3A1E491B45008609B6 /* Main.storyboard in Resources */,
 				EE353EA31E40F4720007D842 /* PowMauICON.PNG in Resources */,
-				EE353E8A1E403D5B0007D842 /* BuildFile in Resources */,
+				EE353E8A1E403D5B0007D842 /* (null) in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,3 +11,15 @@ import Foundation
 class Model {
 	
 }
+
+
+/*	Firebase Database model
+-Users
+	-UID
+		-Email
+		-FullName 
+		-ShirtSize
+		-PantsSize 
+		-ShoeSize
+		-Gender
+*/

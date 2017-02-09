@@ -7,29 +7,50 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
+	
+	var ref: FIRDatabaseReference!
+	var refHandle: UInt!
 	
 	// MARK: IBOutlets
 	@IBOutlet weak var saveButtonOutlet: UIButton!
 	@IBOutlet weak var fullNameTextField: UITextField!
 	@IBOutlet weak var emailTextField: UITextField!
 	@IBOutlet weak var passwordTextField: UITextField!
+	@IBOutlet weak var SegmentedControlOutlet: UISegmentedControl!
 	@IBOutlet weak var sizePicker: UIPickerView!
+	
 	
 	// MARK: IBActions
 	@IBAction func logOutButtonTapped(_ sender: UIButton) {
+		print("User logged out...")
+		try! FIRAuth.auth()?.signOut()
 	}
 	
 	
 	@IBAction func saveButtonTapped(_ sender: UIButton) {
 		
-		// Alert Message 
+		// Alert Message
 		let alert = UIAlertController(title: "Alert!", message: "Your account information has been updated!", preferredStyle: UIAlertControllerStyle.alert)
 		alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
 		self.present(alert, animated: true, completion: nil)
 		// ------------------------------------------------------
 	}
+	
+	@IBAction func MaleOrFemaleControl(_ sender: UISegmentedControl) {
+		
+		if SegmentedControlOutlet.selectedSegmentIndex == 0 {
+			
+		}
+	}
+	
+	
+	
+	
 	
 	// MARK: ViewDidLoad ------------------------------------------------------------------------
 	override func viewDidLoad() {
@@ -41,12 +62,31 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
 		saveButtonOutlet.layer.borderWidth = 1
 		saveButtonOutlet.layer.borderColor = UIColor(red: 44 / 255, green: 152 / 255, blue: 181 / 255, alpha: 1).cgColor
 		//---------------------------------------------------------
-
+		
 		// Picker View
 		sizePicker.delegate = self
 		sizePicker.dataSource = self
 		wheelContents = [shirtSizes, pantsSizes, shoeSizes]
 		//--------------------------------------------------------
+		
+		//		ref = FIRDatabase.database().reference()
+		//		refHandle = ref.observe(FIRDataEventType.value, with: { (snapshot) in
+		//			let dataDict = snapshot.value as! [String: Any]
+		//
+		//			print(dataDict)
+		//		})
+		//
+		//		let userID: String = (FIRAuth.auth()?.currentUser?.uid)!
+		//
+		//		ref.child("Users").child(userID).observeSingleEvent(of: .value, with: {
+		//			(snapshot) in
+		//			let email = snapshot.value!["Email"] as! String
+		//			let password = snapshot.value!["Password"] as! String
+		//			self.emailTextField.text = email
+		//			self.passwordTextField.text = password
+		//
+		//		})
+		
 	}
 	
 	
@@ -68,8 +108,8 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
 		return wheelContents.count
 	}
 	//-------------------------------------------------------------------------------
-
-
+	
+	
 	// MARK: To Control the Keyboard ------------------------------------------------
 	// To dismiss the keyboard when the user touches outside of the keyboard
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

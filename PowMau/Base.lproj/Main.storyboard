@@ -267,6 +267,7 @@
                                         </state>
                                         <connections>
                                             <action selector="logOutButtonTapped:" destination="sew-T1-KKe" eventType="touchUpInside" id="rhU-ll-gMy"/>
+                                            <segue destination="sm3-R6-vQl" kind="show" id="hFW-cD-h96"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -303,6 +304,9 @@
                                     <segment title="Female"/>
                                 </segments>
                                 <color key="tintColor" red="0.17254901959999999" green="0.59788876769999999" blue="0.70938164000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="MaleOrFemaleControl:" destination="sew-T1-KKe" eventType="valueChanged" id="FRY-FF-Id0"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shirt Size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeH-Oj-PLL">
                                 <rect key="frame" x="13" y="264" width="78" height="21"/>
@@ -323,6 +327,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="User_000000_25" selectedImage="User_000000_25" id="E3K-5H-kr7"/>
                     <connections>
+                        <outlet property="SegmentedControlOutlet" destination="2KO-9j-Phe" id="q7y-TD-OPE"/>
                         <outlet property="emailTextField" destination="6Oz-g8-ooa" id="RBW-DO-d2Q"/>
                         <outlet property="fullNameTextField" destination="kcf-vH-an6" id="Bip-Ey-twD"/>
                         <outlet property="passwordTextField" destination="bgL-lB-HfH" id="8iH-Mn-jcE"/>
@@ -451,13 +456,13 @@
                                 <rect key="frame" x="39" y="487" width="293" height="38"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not a member yet?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rn-Vd-G73">
-                                        <rect key="frame" x="0.0" y="0.0" width="153" height="38"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="152.5" height="38"/>
                                         <fontDescription key="fontDescription" name="LemonMilk" family="Lemon/Milk" pointSize="15"/>
                                         <color key="textColor" red="0.9805663228" green="0.96496254209999999" blue="0.96458369489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgJ-uO-qZU">
-                                        <rect key="frame" x="102" y="0.0" width="191" height="38"/>
+                                        <rect key="frame" x="101.5" y="0.0" width="191.5" height="38"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="LemonMilk" family="Lemon/Milk" pointSize="19"/>
                                         <state key="normal" title="Sign Up!">
@@ -701,11 +706,11 @@
                                 <rect key="frame" x="16" y="518" width="292" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="LemonMilk" family="Lemon/Milk" pointSize="19"/>
-                                <state key="normal" title="Continue!">
+                                <state key="normal" title="Save!">
                                     <color key="titleColor" red="0.17254901959999999" green="0.59788876769999999" blue="0.70938164000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="continueButtonTapped:" destination="vQT-hb-Rc1" eventType="touchUpInside" id="pbi-Zm-RNg"/>
+                                    <action selector="saveButtonTapped:" destination="vQT-hb-Rc1" eventType="touchUpInside" id="y3i-iG-tRe"/>
                                     <segue destination="oie-ut-W87" kind="show" id="Jji-yS-8gc"/>
                                 </connections>
                             </button>
@@ -717,6 +722,9 @@
                                     <segment title="Female"/>
                                 </segments>
                                 <color key="tintColor" red="0.17254901959999999" green="0.59788876769999999" blue="0.70938164000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="MaleOrFemaleControl:" destination="vQT-hb-Rc1" eventType="valueChanged" id="0Hg-Ad-TrY"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shoe Size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFD-fE-P0E">
                                 <rect key="frame" x="223" y="264" width="81" height="21"/>
@@ -725,21 +733,29 @@
                                 <color key="textColor" red="0.17254901959999999" green="0.59788876769999999" blue="0.70938164000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Male" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0T-wl-cC4">
+                                <rect key="frame" x="170" y="436" width="82" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="SegmentedControlOutlet" destination="G2K-ym-Pwo" id="sDw-WT-MQ1"/>
-                        <outlet property="continueButtonOutlet" destination="7Oi-iN-g6j" id="rnv-bg-WbU"/>
+                        <outlet property="SegmentedControlOutlet" destination="G2K-ym-Pwo" id="Gtp-Ln-xuA"/>
                         <outlet property="emailTextField" destination="ISV-0G-afv" id="nWn-Dl-9ok"/>
                         <outlet property="fullNameTextField" destination="Wmh-J6-KaN" id="NIz-gk-YNE"/>
+                        <outlet property="maleOrFemaleLabel" destination="w0T-wl-cC4" id="WaE-sJ-G7o"/>
                         <outlet property="passwordTextField" destination="Xi2-sV-sWE" id="NhH-O0-X0v"/>
+                        <outlet property="saveButtonOutlet" destination="7Oi-iN-g6j" id="fPb-hc-4QZ"/>
                         <outlet property="sizePicker" destination="5Bu-uc-Xl9" id="V80-Ai-5Fv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N42-Ar-SjO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-778" y="1616"/>
+            <point key="canvasLocation" x="-778.125" y="1615.1408450704225"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="65E-3H-tqy">
@@ -774,4 +790,7 @@
         <image name="Surfing_000000_25" width="25" height="25"/>
         <image name="User_000000_25" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="hFW-cD-h96"/>
+    </inferredMetricsTieBreakers>
 </document>
