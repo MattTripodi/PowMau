@@ -30,6 +30,8 @@
 		EEA84D431E498FBA008609B6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D421E498FBA008609B6 /* Model.swift */; };
 		EEA84D451E4A2E26008609B6 /* AppICON in Resources */ = {isa = PBXBuildFile; fileRef = EEA84D441E4A2E26008609B6 /* AppICON */; };
 		EEA84D471E4A5030008609B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEA84D461E4A5030008609B6 /* GoogleService-Info.plist */; };
+		EEF1129A1E501DBA00D9F893 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF112991E501DBA00D9F893 /* ProductModel.swift */; };
+		EEF1129C1E5023D100D9F893 /* ProductImages in Resources */ = {isa = PBXBuildFile; fileRef = EEF1129B1E5023D100D9F893 /* ProductImages */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		EEA84D421E498FBA008609B6 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		EEA84D441E4A2E26008609B6 /* AppICON */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppICON; sourceTree = "<group>"; };
 		EEA84D461E4A5030008609B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EEF112991E501DBA00D9F893 /* ProductModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		EEF1129B1E5023D100D9F893 /* ProductImages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ProductImages; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,7 @@
 			children = (
 				EE353E9C1E404FD00007D842 /* POWMAU_Logo 1.png */,
 				EE353EA21E40F4720007D842 /* PowMauICON.PNG */,
+				EEF1129B1E5023D100D9F893 /* ProductImages */,
 				EEA84D441E4A2E26008609B6 /* AppICON */,
 			);
 			name = Images;
@@ -189,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				EEA84D421E498FBA008609B6 /* Model.swift */,
+				EEF112991E501DBA00D9F893 /* ProductModel.swift */,
 			);
 			name = DataModel;
 			sourceTree = "<group>";
@@ -264,6 +270,7 @@
 				EE353E9D1E404FD00007D842 /* POWMAU_Logo 1.png in Resources */,
 				EEA84D3A1E491B45008609B6 /* Main.storyboard in Resources */,
 				EE353EA31E40F4720007D842 /* PowMauICON.PNG in Resources */,
+				EEF1129C1E5023D100D9F893 /* ProductImages in Resources */,
 				EE353E8A1E403D5B0007D842 /* (null) in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +335,7 @@
 				EEA84D401E498B2F008609B6 /* NewsTableViewCell.swift in Sources */,
 				EE353E871E403D5B0007D842 /* ViewController.swift in Sources */,
 				EE353E851E403D5B0007D842 /* AppDelegate.swift in Sources */,
+				EEF1129A1E501DBA00D9F893 /* ProductModel.swift in Sources */,
 				EEA84D3E1E498B02008609B6 /* NewsViewController.swift in Sources */,
 				EEA84D431E498FBA008609B6 /* Model.swift in Sources */,
 				EEA84D0E1E48E1A7008609B6 /* ProductsTableViewCell.swift in Sources */,

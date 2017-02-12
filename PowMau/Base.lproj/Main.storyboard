@@ -40,32 +40,54 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2009-spy-omega-snowboard-goggles" translatesAutoresizingMaskIntoConstraints="NO" id="ORb-HX-h2a">
-                                                    <rect key="frame" x="8" y="0.0" width="127" height="115"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ORb-HX-h2a">
+                                                    <rect key="frame" x="8" y="0.0" width="114" height="115"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="114" id="l5n-Gb-f1g"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crb-iE-wNN">
-                                                    <rect key="frame" x="143" y="8" width="169" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crb-iE-wNN">
+                                                    <rect key="frame" x="130" y="0.0" width="182" height="24"/>
+                                                    <fontDescription key="fontDescription" name="LemonMilk" family="Lemon/Milk" pointSize="15"/>
+                                                    <color key="textColor" red="0.17254901959999999" green="0.59788876769999999" blue="0.70938164000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8R-I4-gVm">
-                                                    <rect key="frame" x="143" y="65" width="169" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Product description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8R-I4-gVm">
+                                                    <rect key="frame" x="130" y="57" width="182" height="58"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="58" id="5Lu-aE-zV6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.17254901959999999" green="0.59788876769999999" blue="0.70938164000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtZ-OT-fX6">
-                                                    <rect key="frame" x="143" y="37" width="169" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtZ-OT-fX6">
+                                                    <rect key="frame" x="130" y="32" width="190" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="6gx-pg-MV5"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="LemonMilk" family="Lemon/Milk" pointSize="13"/>
+                                                    <color key="textColor" red="0.17254901959999999" green="0.59788876769999999" blue="0.70938164000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="crb-iE-wNN" firstAttribute="leading" secondItem="ORb-HX-h2a" secondAttribute="trailing" constant="8" symbolic="YES" id="8Es-Pn-P3s"/>
+                                                <constraint firstItem="OtZ-OT-fX6" firstAttribute="leading" secondItem="M8R-I4-gVm" secondAttribute="leading" id="BWt-zQ-9Ub"/>
+                                                <constraint firstItem="ORb-HX-h2a" firstAttribute="top" secondItem="DEX-cf-TEF" secondAttribute="top" id="CK8-tK-zzv"/>
+                                                <constraint firstItem="ORb-HX-h2a" firstAttribute="bottom" secondItem="DEX-cf-TEF" secondAttribute="bottomMargin" id="JLm-2U-w6g"/>
+                                                <constraint firstItem="OtZ-OT-fX6" firstAttribute="top" secondItem="crb-iE-wNN" secondAttribute="bottom" constant="8" id="P5e-FM-GSs"/>
+                                                <constraint firstItem="M8R-I4-gVm" firstAttribute="leading" secondItem="ORb-HX-h2a" secondAttribute="trailing" constant="8" id="SpZ-s4-38h"/>
+                                                <constraint firstItem="OtZ-OT-fX6" firstAttribute="leading" secondItem="ORb-HX-h2a" secondAttribute="trailing" constant="8" id="WQF-Ph-NHJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="OtZ-OT-fX6" secondAttribute="trailing" id="XTq-bU-bhK"/>
+                                                <constraint firstItem="ORb-HX-h2a" firstAttribute="top" secondItem="crb-iE-wNN" secondAttribute="top" id="h3y-iQ-es5"/>
+                                                <constraint firstItem="crb-iE-wNN" firstAttribute="leading" secondItem="OtZ-OT-fX6" secondAttribute="leading" id="hZj-e0-8s7"/>
+                                                <constraint firstItem="M8R-I4-gVm" firstAttribute="top" secondItem="OtZ-OT-fX6" secondAttribute="bottom" constant="8" id="hl1-Bz-lGe"/>
+                                                <constraint firstItem="ORb-HX-h2a" firstAttribute="leading" secondItem="DEX-cf-TEF" secondAttribute="leadingMargin" id="jlW-c7-BgO"/>
+                                                <constraint firstItem="ORb-HX-h2a" firstAttribute="bottom" secondItem="M8R-I4-gVm" secondAttribute="bottom" id="miM-Xs-RDr"/>
+                                                <constraint firstItem="crb-iE-wNN" firstAttribute="trailing" secondItem="DEX-cf-TEF" secondAttribute="trailingMargin" id="s0c-Id-M4x"/>
+                                                <constraint firstItem="crb-iE-wNN" firstAttribute="trailing" secondItem="M8R-I4-gVm" secondAttribute="trailing" id="uTK-Nc-6Tn"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="productBrand" destination="OtZ-OT-fX6" id="f7H-A2-78K"/>
@@ -150,6 +172,18 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EPZ-d2-TO5" id="dhB-zE-ZQT">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nb1-Jb-DYb">
+                                                    <rect key="frame" x="8" y="0.0" width="304" height="109"/>
+                                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </webView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nb1-Jb-DYb" firstAttribute="top" secondItem="dhB-zE-ZQT" secondAttribute="top" id="Brc-08-N63"/>
+                                                <constraint firstItem="nb1-Jb-DYb" firstAttribute="leading" secondItem="dhB-zE-ZQT" secondAttribute="leading" constant="8" id="Gv4-L5-m98"/>
+                                                <constraint firstAttribute="trailing" secondItem="nb1-Jb-DYb" secondAttribute="trailing" constant="8" id="bXq-kC-i39"/>
+                                                <constraint firstAttribute="bottom" secondItem="nb1-Jb-DYb" secondAttribute="bottom" id="vY1-cO-pOp"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -1079,7 +1113,6 @@ Head over to the next page and fill out some information for us.</mutableString>
         </scene>
     </scenes>
     <resources>
-        <image name="2009-spy-omega-snowboard-goggles" width="531" height="283"/>
         <image name="Google News_000000_25" width="25" height="25"/>
         <image name="POWMAU_Logo 1" width="1024" height="614"/>
         <image name="Product_000000_25" width="25" height="25"/>

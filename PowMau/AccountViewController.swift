@@ -40,15 +40,43 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
 	
 	@IBAction func saveButtonTapped(_ sender: UIButton) {
 		
-		FIRAuth.auth()?.currentUser?.updateEmail(<#T##email: String##String#>, completion: <#T##FIRUserProfileChangeCallback?##FIRUserProfileChangeCallback?##(Error?) -> Void#>)
+		let currentUser = FIRAuth.auth()?.currentUser
 		
-		
-		// Alert Message
-		let alert = UIAlertController(title: "Alert!", message: "Your account information has been updated!", preferredStyle: UIAlertControllerStyle.alert)
-		alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
-		self.present(alert, animated: true, completion: nil)
-		// ------------------------------------------------------
+		currentUser?.updateEmail(emailTextField.text!) { error in
+			if error != nil {
+				
+				print("Error")
+				
+			} else {
+				// Email updated.
+				currentUser?.updatePassword(self.passwordTextField.text!) { error in
+					if error != nil {
+						
+						print("Error")
+						
+					} else {
+						// Password updated.
+						print("success")
+						
+						self.updateAlert()
+						
+						let userID: String = currentUser!.uid
+						let userFullName: String = self.fullNameTextField.text!
+						let userEmail: String = self.emailTextField.text!
+						let userGender: String = self.maleOrFemaleLabel.text!
+						let userShirtSize: String = self.selectedShirtLabel.text!
+						let userPantsSize: String = self.selectedPantsSizeLabel.text!
+						let userShoeSize: String = self.selectedShoeSizeLabel.text!
+						
+						self.ref.child("Users").child(userID).setValue(["Full Name": userFullName ,"Email": userEmail, "Gender": userGender, "Shirt size:": userShirtSize, "Pants size:": userPantsSize, "Shoe size:": userShoeSize])
+						
+						print("User Created: " + (currentUser?.uid)!)
+					}
+				}
+			}
+		}
 	}
+	
 	
 	@IBAction func MaleOrFemaleControl(_ sender: UISegmentedControl) {
 		
@@ -61,6 +89,13 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
 		}
 	}
 	
+	func updateAlert() {
+		// Alert Message
+		let alert = UIAlertController(title: "Alert!", message: "Your account information has been updated!", preferredStyle: UIAlertControllerStyle.alert)
+		alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+		self.present(alert, animated: true, completion: nil)
+		// ------------------------------------------------------
+	}
 	
 	// MARK: ViewDidLoad ------------------------------------------------------------------------
 	override func viewDidLoad() {
