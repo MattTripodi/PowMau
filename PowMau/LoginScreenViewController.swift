@@ -23,6 +23,14 @@ class LoginScreenViewController: UIViewController, UITextFieldDelegate {
 		self.login()
 		
 	}
+	
+	// Alert pop up function
+	func emailPasswordErrorAlert() {
+		let alert = UIAlertController(title: "Error!", message: "Please enter a valid email address and password", preferredStyle: UIAlertControllerStyle.alert)
+		alert.addAction(UIAlertAction(title: "Try again", style: UIAlertActionStyle.default, handler: nil))
+		self.present(alert, animated: true, completion: nil)
+	}
+	
 	// Login Function
 	func login() {
 		
@@ -33,21 +41,16 @@ class LoginScreenViewController: UIViewController, UITextFieldDelegate {
 				
 				print("Incorrect")
 				
-				// Alert Message
-				let alert = UIAlertController(title: "Alert!", message: "Your email or password was entered incorrectly.", preferredStyle: UIAlertControllerStyle.alert)
-				alert.addAction(UIAlertAction(title: "Try again", style: UIAlertActionStyle.default, handler: nil))
-				self.present(alert, animated: true, completion: nil)
-				// ------------------------------------------------------
+				self.emailPasswordErrorAlert()
 				
 			} else {
 				
 				print("Success!")
+				self.performSegue(withIdentifier: "toTabView", sender: self)
 			}
 		})
 	}
 	// -----------------------------------------------------------------------------------------
-	
-	
 	
 	// MARK: ViewDidLoad --------------------------------------------------------------------
 	override func viewDidLoad() {
@@ -59,9 +62,8 @@ class LoginScreenViewController: UIViewController, UITextFieldDelegate {
 		loginButtonOutlet.layer.borderWidth = 1
 		loginButtonOutlet.layer.borderColor = UIColor.white.cgColor
 		//---------------------------------------------------------
-		
-		
 	}
+	
 	
 	// MARK: To Control the Keyboard
 	// To dismiss the keyboard when the user touches outside of the keyboard
@@ -76,4 +78,9 @@ class LoginScreenViewController: UIViewController, UITextFieldDelegate {
 	}
 	// --------------------------------------------------------------------------
 	
+	// To make the status bar text white 
+	override var preferredStatusBarStyle: UIStatusBarStyle {
+		return .lightContent
+	}
+
 }

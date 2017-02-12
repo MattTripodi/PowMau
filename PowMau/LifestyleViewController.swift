@@ -29,4 +29,10 @@ class LifestyleViewController: UIViewController, UITableViewDataSource, UITableV
 		return cell 
 	}
 	
+	
+	// To make the status bar text white
+	override var preferredStatusBarStyle: UIStatusBarStyle {
+		return .lightContent
+	}
+	
 }

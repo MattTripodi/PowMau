@@ -27,6 +27,10 @@ class ThankYouForSigningUpScreenViewController: UIViewController {
 		continueButtonOutlet.layer.borderWidth = 1
 		continueButtonOutlet.layer.borderColor = UIColor.white.cgColor
 		//---------------------------------------------------------
-
     }
+	
+	// To make the status bar text white
+	override var preferredStatusBarStyle: UIStatusBarStyle {
+		return .lightContent
+	}
 }

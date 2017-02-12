@@ -23,16 +23,25 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
 	@IBOutlet weak var passwordTextField: UITextField!
 	@IBOutlet weak var SegmentedControlOutlet: UISegmentedControl!
 	@IBOutlet weak var sizePicker: UIPickerView!
+	@IBOutlet weak var maleOrFemaleLabel: UILabel!
+	@IBOutlet weak var selectedShirtLabel: UILabel!
+	@IBOutlet weak var selectedPantsSizeLabel: UILabel!
+	@IBOutlet weak var selectedShoeSizeLabel: UILabel!
 	
 	
-	// MARK: IBActions
+	// MARK: IBActions ---------------------------------------------------
 	@IBAction func logOutButtonTapped(_ sender: UIButton) {
 		print("User logged out...")
 		try! FIRAuth.auth()?.signOut()
+		
+		performSegue(withIdentifier: "toLogin", sender: self)
 	}
 	
 	
 	@IBAction func saveButtonTapped(_ sender: UIButton) {
+		
+		FIRAuth.auth()?.currentUser?.updateEmail(<#T##email: String##String#>, completion: <#T##FIRUserProfileChangeCallback?##FIRUserProfileChangeCallback?##(Error?) -> Void#>)
+		
 		
 		// Alert Message
 		let alert = UIAlertController(title: "Alert!", message: "Your account information has been updated!", preferredStyle: UIAlertControllerStyle.alert)
@@ -44,12 +53,13 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
 	@IBAction func MaleOrFemaleControl(_ sender: UISegmentedControl) {
 		
 		if SegmentedControlOutlet.selectedSegmentIndex == 0 {
-			
+			maleOrFemaleLabel.text = "Male"
+			print(maleOrFemaleLabel)
+		} else {
+			maleOrFemaleLabel.text = "Female"
+			print(maleOrFemaleLabel)
 		}
 	}
-	
-	
-	
 	
 	
 	// MARK: ViewDidLoad ------------------------------------------------------------------------
@@ -67,34 +77,31 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
 		sizePicker.delegate = self
 		sizePicker.dataSource = self
 		wheelContents = [shirtSizes, pantsSizes, shoeSizes]
+		updateLabel()
 		//--------------------------------------------------------
-		
-		//		ref = FIRDatabase.database().reference()
-		//		refHandle = ref.observe(FIRDataEventType.value, with: { (snapshot) in
-		//			let dataDict = snapshot.value as! [String: Any]
-		//
-		//			print(dataDict)
-		//		})
-		//
-		//		let userID: String = (FIRAuth.auth()?.currentUser?.uid)!
-		//
-		//		ref.child("Users").child(userID).observeSingleEvent(of: .value, with: {
-		//			(snapshot) in
-		//			let email = snapshot.value!["Email"] as! String
-		//			let password = snapshot.value!["Password"] as! String
-		//			self.emailTextField.text = email
-		//			self.passwordTextField.text = password
-		//
-		//		})
 		
 	}
 	
 	
-	// MARK: PickerViews ----------------------------------------------------
+	// MARK: PickerView ----------------------------------------------------
 	var wheelContents: [[String]] = []
 	var shirtSizes = ["XS", "S", "M", "L", "XL", "XXL"]
 	var pantsSizes = ["XS", "S", "M", "L", "XL", "XXL"]
 	var shoeSizes = ["4", "4.5", "5", "5.5", "6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13", "14"]
+	
+	let shirtSize = 0
+	let pantsSize = 1
+	let shoeSize = 2
+	
+	func updateLabel(){
+		let selectedShirtSize = wheelContents[shirtSize][sizePicker.selectedRow(inComponent: shirtSize)]
+		let selectedPantsSize = wheelContents[pantsSize][sizePicker.selectedRow(inComponent: pantsSize)]
+		let selectedShoeSize = wheelContents[shoeSize][sizePicker.selectedRow(inComponent: shoeSize)]
+	
+		selectedShirtLabel.text = selectedShirtSize
+		selectedPantsSizeLabel.text = selectedPantsSize
+		selectedShoeSizeLabel.text = selectedShoeSize
+	}
 	
 	func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
 		return wheelContents[component][row]
@@ -106,6 +113,15 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
 	
 	func numberOfComponents(in pickerView: UIPickerView) -> Int {
 		return wheelContents.count
+	}
+	
+	func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+		updateLabel()
+	}
+	
+	func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+		let str = wheelContents[component][row]
+		return NSAttributedString(string: str, attributes: [NSForegroundColorAttributeName:UIColor(red: 44 / 255, green: 152 / 255, blue: 181 / 255, alpha: 1)])
 	}
 	//-------------------------------------------------------------------------------
 	
@@ -122,4 +138,9 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
 		return true
 	}
 	// --------------------------------------------------------------------------
+	
+	// To make the status bar text white
+	override var preferredStatusBarStyle: UIStatusBarStyle {
+		return .lightContent
+	}
 }

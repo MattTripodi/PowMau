@@ -31,4 +31,9 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
 		
 		return cell
 	}
+	
+	// To make the status bar text white
+	override var preferredStatusBarStyle: UIStatusBarStyle {
+		return .lightContent
+	}
 }
