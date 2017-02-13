@@ -10,18 +10,23 @@ import UIKit
 
 class NewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	
-	// MARK: IBOutlets 
+	// MARK: IBOutlets
 	@IBOutlet weak var tableView: UITableView!
 	
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
+		tableView.dataSource = self
+		tableView.delegate = self
+		
+		self.navigationItem.title = "News"
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+		
+	}
 	
 	
-	// MARK: TableView 
+	// MARK: TableView
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return 10
 	}
@@ -30,10 +35,5 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
 		let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCell", for: indexPath)
 		
 		return cell
-	}
-	
-	// To make the status bar text white
-	override var preferredStatusBarStyle: UIStatusBarStyle {
-		return .lightContent
 	}
 }

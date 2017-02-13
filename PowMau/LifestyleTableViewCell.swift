@@ -11,6 +11,8 @@ import UIKit
 class LifestyleTableViewCell: UITableViewCell {
 	
 	// MARK: IBOutlets 
+	@IBOutlet weak var videoPreviewImage: UIImageView!
+	@IBOutlet weak var videoTitle: UILabel!
 	
 	
 
@@ -19,10 +21,23 @@ class LifestyleTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+	func updateUI(video: Video) {
+		videoTitle.text = video.videoTitle
+		
+		let url = URL(string: video.imageURL)
+		
+		DispatchQueue.global().async {
+			do {
+				let data = try Data(contentsOf: url!)
+				DispatchQueue.global().sync {
+					self.videoPreviewImage.image = UIImage(data: data)
+				}
+			} catch {
+				// handle the error
+			}
+		}
+		
+	}
 
-        // Configure the view for the selected state
-    }
 
 }

@@ -51,11 +51,4 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
 		
 		return cell
 	}
-	
-	
-	// To make the status bar text white
-	override var preferredStatusBarStyle: UIStatusBarStyle {
-		return .lightContent
-	}
-
 }

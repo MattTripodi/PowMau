@@ -39,42 +39,9 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
 	
 	
 	@IBAction func saveButtonTapped(_ sender: UIButton) {
+		//FIRAuth.auth()?.currentUser
 		
-		let currentUser = FIRAuth.auth()?.currentUser
-		
-		currentUser?.updateEmail(emailTextField.text!) { error in
-			if error != nil {
-				
-				print("Error")
-				
-			} else {
-				// Email updated.
-				currentUser?.updatePassword(self.passwordTextField.text!) { error in
-					if error != nil {
-						
-						print("Error")
-						
-					} else {
-						// Password updated.
-						print("success")
-						
-						self.updateAlert()
-						
-						let userID: String = currentUser!.uid
-						let userFullName: String = self.fullNameTextField.text!
-						let userEmail: String = self.emailTextField.text!
-						let userGender: String = self.maleOrFemaleLabel.text!
-						let userShirtSize: String = self.selectedShirtLabel.text!
-						let userPantsSize: String = self.selectedPantsSizeLabel.text!
-						let userShoeSize: String = self.selectedShoeSizeLabel.text!
-						
-						self.ref.child("Users").child(userID).setValue(["Full Name": userFullName ,"Email": userEmail, "Gender": userGender, "Shirt size:": userShirtSize, "Pants size:": userPantsSize, "Shoe size:": userShoeSize])
-						
-						print("User Created: " + (currentUser?.uid)!)
-					}
-				}
-			}
-		}
+		self.updateAlert()
 	}
 	
 	
@@ -132,7 +99,7 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
 		let selectedShirtSize = wheelContents[shirtSize][sizePicker.selectedRow(inComponent: shirtSize)]
 		let selectedPantsSize = wheelContents[pantsSize][sizePicker.selectedRow(inComponent: pantsSize)]
 		let selectedShoeSize = wheelContents[shoeSize][sizePicker.selectedRow(inComponent: shoeSize)]
-	
+		
 		selectedShirtLabel.text = selectedShirtSize
 		selectedPantsSizeLabel.text = selectedPantsSize
 		selectedShoeSizeLabel.text = selectedShoeSize
@@ -173,9 +140,4 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
 		return true
 	}
 	// --------------------------------------------------------------------------
-	
-	// To make the status bar text white
-	override var preferredStatusBarStyle: UIStatusBarStyle {
-		return .lightContent
-	}
 }
