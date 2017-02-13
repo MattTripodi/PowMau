@@ -655,6 +655,7 @@
                     <navigationItem key="navigationItem" id="lOM-qv-Wqc"/>
                     <connections>
                         <outlet property="tableView" destination="wgr-0j-5Np" id="pbi-7j-q1K"/>
+                        <segue destination="3iL-MQ-egv" kind="show" identifier="toWebView" id="CpN-2J-oDy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9f-JC-qhC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -753,13 +754,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-51" translatesAutoresizingMaskIntoConstraints="NO" id="nOM-N3-12J" userLabel="Not a memeber yet Stack">
                                 <rect key="frame" x="39" y="487" width="293" height="38"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="256" verticalHuggingPriority="251" ambiguous="YES" text="Not a member yet?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rn-Vd-G73">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="256" verticalHuggingPriority="251" text="Not a member yet?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rn-Vd-G73">
                                         <rect key="frame" x="0.0" y="0.0" width="152.5" height="38"/>
                                         <fontDescription key="fontDescription" name="LemonMilk" family="Lemon/Milk" pointSize="15"/>
                                         <color key="textColor" red="0.9805663228" green="0.96496254209999999" blue="0.96458369489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgJ-uO-qZU">
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgJ-uO-qZU">
                                         <rect key="frame" x="101.5" y="0.0" width="191.5" height="38"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="LemonMilk" family="Lemon/Milk" pointSize="19"/>

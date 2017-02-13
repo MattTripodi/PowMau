@@ -52,6 +52,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		let safariVC = SFSafariViewController(url: URL(string: articleJSON[indexPath.row].url!)!)
 		present(safariVC, animated:  true, completion: nil)
+		tableView.deselectRow(at: indexPath, animated: true)
 	}
 	
 	
@@ -74,7 +75,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
 	func fetchData(closure: @escaping ([Article]?) -> ()) {
 		
 		// Snowboarding Surfing News
-		let SSNews = "Snowboarding and surfing"
+		let SSNews = "Snowboarding and surfing news"
 		let processedKeywords = SSNews.replacingOccurrences(of: " ", with: "+")
 		let urlString = "https://newsapi.org/v1/articles?source=google-news&sortBy=top&search?q=\(processedKeywords)&apiKey=a368d3c0637848d0a275cf2a83cfcbfe"
 		let urlRequest = URL(string: urlString)!
