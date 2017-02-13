@@ -24,15 +24,15 @@ class LifestyleViewController: UIViewController, UITableViewDataSource, UITableV
 		
 		self.navigationItem.title = "Lifestyle"
 		
-		let video1 = Video(imageURL: "https://www.snowskool.com/uploads/images/Intermediate_to_Advanced_Boarding.jpg", videoURL: "<iframe width=\"398\" height=\"500\" src=\"https://www.youtube.com/embed/iR9Ax4EcqTI\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Snowboarding An Empty Water Park | Snowmusement")
+		let video1 = Video(imageURL: "https://www.snowskool.com/uploads/images/Intermediate_to_Advanced_Boarding.jpg", videoURL: "<iframe width=\"398\" height=\"600\" src=\"https://www.youtube.com/embed/iR9Ax4EcqTI\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Snowboarding An Empty Water Park Snowmusement")
 		
-		let video2 = Video(imageURL: "http://snowboarding.transworld.net/wp-content/blogs.dir/442/files/2014/02/Park_Sessions_Mantle_Marquee_Gerard_Birk.jpg", videoURL: "<iframe width=\"398\" height=\"500\" src=\"https://www.youtube.com/embed/UtZofZjccBs\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Park Sessions Woodward at Tahoe - TransWorld SNOWboarding")
+		let video2 = Video(imageURL: "https://i.ytimg.com/vi/UtZofZjccBs/hqdefault.jpg", videoURL: "<iframe width=\"398\" height=\"600\" src=\"https://www.youtube.com/embed/UtZofZjccBs\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Park Sessions Woodward at Tahoe TransWorld SNOWboarding")
 		
-		let video3 = Video(imageURL: "http://www.xtremespots.com/wp-content/uploads/2015/06/wave-4.jpg", videoURL: "<iframe width=\"398\" height=\"500\" src=\"https://www.youtube.com/embed/5XpU5M0ZCKM\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "WORLDS BIGGEST WAVES EVER SURFED!")
+		let video3 = Video(imageURL: "https://s-media-cache-ak0.pinimg.com/originals/85/8b/50/858b5097ff6e051be097495d653a9904.jpg", videoURL: "<iframe width=\"398\" height=\"600\" src=\"https://www.youtube.com/embed/5XpU5M0ZCKM\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "WORLDS BIGGEST WAVES EVER SURFED!")
 		
-		let video4 = Video(imageURL: "https://i.ytimg.com/vi/fNr8kqSLpxQ/hqdefault.jpg", videoURL: "<iframe width=\"398\" height=\"500\" src=\"https://www.youtube.com/embed/fNr8kqSLpxQ\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "World's best surfing 2014/2015 (HD)")
+		let video4 = Video(imageURL: "https://i.ytimg.com/vi/fNr8kqSLpxQ/hqdefault.jpg", videoURL: "<iframe width=\"398\" height=\"600\" src=\"https://www.youtube.com/embed/fNr8kqSLpxQ\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "World's best surfing")
 		
-		let video5 = Video(imageURL: "https://i.ytimg.com/vi/Q5691RGDUJ4/maxresdefault.jpg", videoURL: "<iframe width=\"398\" height=\"500\" src=\"https://www.youtube.com/embed/Q5691RGDUJ4\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "The Art of Ride - Snowboarding Off Piste Backcountry - DJI Phantom 2 GoPro Hero 3+")
+		let video5 = Video(imageURL: "https://i.ytimg.com/vi/Q5691RGDUJ4/maxresdefault.jpg", videoURL: "<iframe width=\"398\" height=\"600\" src=\"https://www.youtube.com/embed/Q5691RGDUJ4\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "The Art of Ride Snowboarding Off Piste Backcountry - DJI Phantom 2 GoPro Hero 3+")
 		
 		videos.append(video1)
 		videos.append(video2)
@@ -63,6 +63,8 @@ class LifestyleViewController: UIViewController, UITableViewDataSource, UITableV
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		
 		let video = videos[indexPath.row]
+		
+		tableView.deselectRow(at: indexPath, animated: true)
 		
 		performSegue(withIdentifier: "toVideo", sender: video)
 	}

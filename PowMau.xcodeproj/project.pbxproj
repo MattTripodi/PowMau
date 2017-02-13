@@ -16,8 +16,8 @@
 		EE353EA31E40F4720007D842 /* PowMauICON.PNG in Resources */ = {isa = PBXBuildFile; fileRef = EE353EA21E40F4720007D842 /* PowMauICON.PNG */; };
 		EE353EA61E4115790007D842 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE353EA51E4115790007D842 /* LoginScreenViewController.swift */; };
 		EE353EAC1E412BE40007D842 /* LemonMilk.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE353EAB1E412BE40007D842 /* LemonMilk.otf */; };
-		EE98833F1E51A379005319FD /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE98833E1E51A379005319FD /* ArticlesViewController.swift */; };
 		EE9883411E51A43B005319FD /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9883401E51A43B005319FD /* NewsModel.swift */; };
+		EE9883471E51BDD7005319FD /* ArticleWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9883461E51BDD7005319FD /* ArticleWebViewController.swift */; };
 		EEA84D081E48DFCB008609B6 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D071E48DFCB008609B6 /* ProductsViewController.swift */; };
 		EEA84D0A1E48E014008609B6 /* LifestyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D091E48E014008609B6 /* LifestyleViewController.swift */; };
 		EEA84D0C1E48E02D008609B6 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D0B1E48E02D008609B6 /* AccountViewController.swift */; };
@@ -50,8 +50,8 @@
 		EE353EA21E40F4720007D842 /* PowMauICON.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PowMauICON.PNG; sourceTree = "<group>"; };
 		EE353EA51E4115790007D842 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		EE353EAB1E412BE40007D842 /* LemonMilk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LemonMilk.otf; sourceTree = "<group>"; };
-		EE98833E1E51A379005319FD /* ArticlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
 		EE9883401E51A43B005319FD /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		EE9883461E51BDD7005319FD /* ArticleWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleWebViewController.swift; sourceTree = "<group>"; };
 		EEA84D071E48DFCB008609B6 /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		EEA84D091E48E014008609B6 /* LifestyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifestyleViewController.swift; sourceTree = "<group>"; };
 		EEA84D0B1E48E02D008609B6 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 				EEF112A41E518AB300D9F893 /* VideoPlayerViewController.swift */,
 				EEA84D0B1E48E02D008609B6 /* AccountViewController.swift */,
 				EEA84D3D1E498B02008609B6 /* NewsViewController.swift */,
-				EE98833E1E51A379005319FD /* ArticlesViewController.swift */,
+				EE9883461E51BDD7005319FD /* ArticleWebViewController.swift */,
 				EE353E981E404B2E0007D842 /* Cells */,
 			);
 			name = Logic;
@@ -340,8 +340,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEF112A31E51829700D9F893 /* VideosModel.swift in Sources */,
-				EE98833F1E51A379005319FD /* ArticlesViewController.swift in Sources */,
 				EEA84D371E49027E008609B6 /* ThankYouForSigningUpScreenViewController.swift in Sources */,
+				EE9883471E51BDD7005319FD /* ArticleWebViewController.swift in Sources */,
 				EEA84D101E48E2DC008609B6 /* SignUpScreenViewController.swift in Sources */,
 				EEA84D401E498B2F008609B6 /* NewsTableViewCell.swift in Sources */,
 				EE353E851E403D5B0007D842 /* AppDelegate.swift in Sources */,

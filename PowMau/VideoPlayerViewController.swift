@@ -12,7 +12,6 @@ class VideoPlayerViewController: UIViewController {
 	
 	// MARK: IBOutlets
 	@IBOutlet weak var webView: UIWebView!
-	@IBOutlet weak var theVideoTitle: UILabel!
 	
 	private var _video: Video!
 	
@@ -32,9 +31,11 @@ class VideoPlayerViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		theVideoTitle.text = video.videoTitle
 		webView.loadHTMLString(video.videoURL, baseURL: nil)
 		
 		self.navigationItem.title = "Video Player"
+		
+		webView.scrollView.isScrollEnabled = false
+		webView.scrollView.bounces = false
 	}
 }
