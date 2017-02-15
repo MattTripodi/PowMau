@@ -14,6 +14,7 @@ import FirebaseDatabase
 class SignUpScreenViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 	
 	var ref: FIRDatabaseReference!
+	var user = [UserModel]()
 	
 	// MARK: IBOutlets 
 	@IBOutlet weak var saveButtonOutlet: UIButton!
@@ -54,7 +55,7 @@ class SignUpScreenViewController: UIViewController, UITextFieldDelegate, UIPicke
 				let userShirtSize: String = self.selectedShirtLabel.text!
 				let userPantsSize: String = self.selectedPantsSizeLabel.text!
 				let userShoeSize: String = self.selectedShoeSizeLabel.text!
-				
+	
 				self.ref.child("Users").child(userID).setValue(["Full Name": userFullName ,"Email": userEmail, "Gender": userGender, "Shirt size:": userShirtSize, "Pants size:": userPantsSize, "Shoe size:": userShoeSize])
 				
 				print("User Created: " + user!.uid)
@@ -63,7 +64,6 @@ class SignUpScreenViewController: UIViewController, UITextFieldDelegate, UIPicke
 			}
 		})
 	}
-	
 	
 	@IBAction func MaleOrFemaleControl(_ sender: UISegmentedControl) {
 		

@@ -15,6 +15,7 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
 	
 	var ref: FIRDatabaseReference!
 	var refHandle: UInt!
+	var user = [UserModel]()
 	
 	// MARK: IBOutlets
 	@IBOutlet weak var saveButtonOutlet: UIButton!
@@ -37,10 +38,18 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
 		performSegue(withIdentifier: "toLogin", sender: self)
 	}
 	
-	
 	@IBAction func saveButtonTapped(_ sender: UIButton) {
-		//FIRAuth.auth()?.currentUser
-		
+		let user = FIRAuth.auth()?.currentUser
+		let newPassword = passwordTextField.text
+		user?.updatePassword(newPassword!) { error in
+			if let error = error {
+				
+				print(error.localizedDescription)
+				
+			} else {
+				print("Password is changed")
+			}
+		}
 		self.updateAlert()
 	}
 	
@@ -81,7 +90,6 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
 		wheelContents = [shirtSizes, pantsSizes, shoeSizes]
 		updateLabel()
 		//--------------------------------------------------------
-		
 	}
 	
 	

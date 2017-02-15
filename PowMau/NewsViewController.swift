@@ -14,7 +14,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
 	var articleJSON = [Article]()
 	var key = "a368d3c0637848d0a275cf2a83cfcbfe"
 	// Google news TopHeadlines
-	// https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey=a368d3c0637848d0a275cf2a83cfcbfe
+	//var originalURLString = "https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey=a368d3c0637848d0a275cf2a83cfcbfe"
 	
 	// MARK: IBOutlets
 	@IBOutlet weak var tableView: UITableView!
@@ -32,7 +32,6 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
 			self.tableView.reloadData()
 		})
 	}
-	
 	
 	// MARK: TableView
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -73,11 +72,10 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
 	
 	// MARK: Fetching Data
 	func fetchData(closure: @escaping ([Article]?) -> ()) {
-		
+	
 		// Snowboarding Surfing News
-		let SSNews = "Snowboarding and surfing news"
-		let processedKeywords = SSNews.replacingOccurrences(of: " ", with: "+")
-		let urlString = "https://newsapi.org/v1/articles?source=google-news&sortBy=top&search?q=\(processedKeywords)&apiKey=a368d3c0637848d0a275cf2a83cfcbfe"
+		//let SSNews = "Snowboardingandsurfing"
+		let urlString = "https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey=a368d3c0637848d0a275cf2a83cfcbfe"
 		let urlRequest = URL(string: urlString)!
 		let task = URLSession.shared.dataTask(with: urlRequest) { rawData, response, error in
 			guard let responseData = rawData else {
@@ -87,7 +85,6 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
 			self.parseJson(data: responseData, completionHandler: closure)
 			print(self.articleJSON)
 		}
-		
 		task.resume()
 	}
 }

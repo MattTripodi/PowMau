@@ -16,6 +16,7 @@
 		EE353EA31E40F4720007D842 /* PowMauICON.PNG in Resources */ = {isa = PBXBuildFile; fileRef = EE353EA21E40F4720007D842 /* PowMauICON.PNG */; };
 		EE353EA61E4115790007D842 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE353EA51E4115790007D842 /* LoginScreenViewController.swift */; };
 		EE353EAC1E412BE40007D842 /* LemonMilk.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE353EAB1E412BE40007D842 /* LemonMilk.otf */; };
+		EE6FC1E21E52328F00AE9C3A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6FC1E11E52328F00AE9C3A /* UserModel.swift */; };
 		EE9883411E51A43B005319FD /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9883401E51A43B005319FD /* NewsModel.swift */; };
 		EE9883471E51BDD7005319FD /* ArticleWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9883461E51BDD7005319FD /* ArticleWebViewController.swift */; };
 		EEA84D081E48DFCB008609B6 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA84D071E48DFCB008609B6 /* ProductsViewController.swift */; };
@@ -50,6 +51,7 @@
 		EE353EA21E40F4720007D842 /* PowMauICON.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PowMauICON.PNG; sourceTree = "<group>"; };
 		EE353EA51E4115790007D842 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		EE353EAB1E412BE40007D842 /* LemonMilk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LemonMilk.otf; sourceTree = "<group>"; };
+		EE6FC1E11E52328F00AE9C3A /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		EE9883401E51A43B005319FD /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		EE9883461E51BDD7005319FD /* ArticleWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleWebViewController.swift; sourceTree = "<group>"; };
 		EEA84D071E48DFCB008609B6 /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
@@ -127,7 +129,6 @@
 				EE353EA41E4115430007D842 /* Auth / Login */,
 				EE353E971E404AC30007D842 /* UI */,
 				EE353E991E404BBD0007D842 /* Images */,
-				EE353EAA1E412BCE0007D842 /* Fonts */,
 				EE353E901E403D5B0007D842 /* Info.plist */,
 				EEA84D461E4A5030008609B6 /* GoogleService-Info.plist */,
 			);
@@ -154,6 +155,7 @@
 				EEA84D381E491B45008609B6 /* Main.storyboard */,
 				EE353E8D1E403D5B0007D842 /* LaunchScreen.storyboard */,
 				EE353E8B1E403D5B0007D842 /* Assets.xcassets */,
+				EE353EAA1E412BCE0007D842 /* Fonts */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				EEA84D421E498FBA008609B6 /* Model.swift */,
+				EE6FC1E11E52328F00AE9C3A /* UserModel.swift */,
 				EEF112991E501DBA00D9F893 /* ProductModel.swift */,
 				EEF112A21E51829700D9F893 /* VideosModel.swift */,
 				EE9883401E51A43B005319FD /* NewsModel.swift */,
@@ -355,6 +358,7 @@
 				EE9883411E51A43B005319FD /* NewsModel.swift in Sources */,
 				EEF112A51E518AB300D9F893 /* VideoPlayerViewController.swift in Sources */,
 				EE353EA61E4115790007D842 /* LoginScreenViewController.swift in Sources */,
+				EE6FC1E21E52328F00AE9C3A /* UserModel.swift in Sources */,
 				EEA84D0A1E48E014008609B6 /* LifestyleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
